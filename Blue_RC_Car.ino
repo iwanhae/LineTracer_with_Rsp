@@ -29,11 +29,11 @@ void loop()
     bt_cmd = Serial.read(); //변수에 입력된 데이터 저장
     rc_ctrl_val(bt_cmd);     //입력된 데이터에 따라 모터에 입력될 변수를 조정하는 함수
   }
-  else                       // 500ms까지 변화가 없을떄
-  { 
-    bt_cmd = 'x';            // 정지
-    rc_ctrl_val(bt_cmd);
-  }
+//  else                       // 500ms까지 변화가 없을떄
+//  { 
+//    bt_cmd = 'x';            // 정지
+//    rc_ctrl_val(bt_cmd);
+//  }
   motor_drive();             //모터를 구동하는 함수
 }
 
